@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>요리는 도전이다</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Gowun+Dodum&family=Noto+Sans+KR:wght@100..900&family=Poor+Story&display=swap" rel="stylesheet">
+
+		<style>
+			html{font-family: "Gowun Dodum"; scroll-behavior: smooth;}
+
+			head, body{margin: 0;}
+
+			header{
+				background-color: white;
+			}
+
+			nav ol{
+				margin:auto; padding:0; width: 1000px; height: 30px;
+				margin-top:60px;
+				display: flex; gap:10px;
+				justify-content: center;
+				background-color: white;}
+			nav ol li{
+				list-style-type: none; 
+				line-height: 20px;
+				height: 20px; padding:9px;
+			}
+			nav ol li a{
+				text-decoration: none; color:black;
+				display: inline-block;
+				background-color: lightyellow;
+			}
+			nav ol li a:hover{background-color: orange;}
+
+			body{text-align: center;}
+
+			h1{
+				margin: 0; padding-top: 100px;
+				height: 200px;
+				font-size: 5em; 
+				animation-duration: 3s; animation-name: slidein;
+			}
+			@keyframes slidein{
+				from{margin-left:100%; width:300%;}
+				to{margin-left:0%; width:100%;}
+			}
+
+			h2{
+				margin: 0; margin-top: 30px; margin-bottom: 5px;
+				font-size: 2em; border-bottom: 2px solid black;
+				flex-basis: 100%; display: inline-block;
+			}
+
+			p{
+				font-size: 1em; margin: 0;
+			}
+
+			section .row ol{
+				padding-left: 30%; text-align: left;
+				font-size:1em;
+			}
+
+			footer{margin: 80px; font-size: 12px;}
+			footer h2{
+				margin: 0; padding: 0;
+				line-height: 50px; display: inline; flex-basis: 390px;
+				}
+			footer img{display: block; margin:0; line-height: 50px;}
+			footer row{padding-bottom: 30px;}
+			footer p{display: inline-block; line-height: 40px;}
+			footer .flex-left{padding-left: 10px;}
+
+			.fixed-totop-text a{
+				text-decoration: none; color:black;
+				background-color: lightyellow;}
+
+			.fixed-totop-text a:hover{background-color: orange;}
+
+			.row{width:1000px; margin: auto; padding:40px;}
+			.flex-center{display: flex; flex-wrap: wrap; justify-content: center;}
+			.flex-left{display: flex; flex-wrap: wrap; justify-content: left;}
+			.row-2{width:48%}
+
+			.cookingimg{
+				width: 200px; height: 200px; padding: 20px; 
+				display: block; margin:auto;}
+			.bg-ly{background-color: lightyellow; width:100px;
+				display: block; margin:auto; text-align: center;}
+			.lefttext{
+				text-align: left;
+				padding-left: 30%;
+			}
+			.bg-green{background: url(bg_green.jpg); background-size: 100%;
+			background-attachment: fixed;}
+			.bg-orange{background: url(bg_orange.jpg); background-size: 100%;
+			background-attachment: fixed;}
+			.p-final{padding-bottom: 20px;}
+			.w-box{height:80px;}
+
+			.fixed-totop-back{position: fixed; bottom:50px; right: 50px;}
+			.fixed-totop-text{position: fixed; bottom:93px; right: 70px;}
+			.icon-s{width: 40px; height:40px;}
+
+			.align-right{text-align: right;}
+			.align-left{text-align: left;}
+
+		</style>
+	</head>
+
+	<body>
+		<header id="0">
+			<h1>나의 레시피 발전 기록</h1>
+		</header>
+
+		<nav>
+			<ol>
+				<li>
+					<a href="#1"> 레시피1 </a>
+				</li>
+				<li>
+					<a href="#2"> 레시피2 </a>
+				</li>
+				<li>
+					<a href="#3"> 레시피3 </a>
+				</li>
+				<li>
+					<a href="#4"> 레시피4 </a>
+				</li>
+				<li>
+					<a href="#5"> 레시피5 </a>
+				</li>
+			</ol>
+		</nav>
+
+		<div class="w-box"></div>
+		
+		<section class="bg-green" id="1">
+		<div class="row">
+			<h2>삶은 감자</h2>
+			<p>2021년 11월</p>
+			<img class="cookingimg" src="cooking1.jpg">
+			<p class="bg-ly">레시피</p>
+			<ol>
+				<li>감자를 씻는다.</li>
+				<li>감자가 물에 잠길 만큼 냄비에 물을 넣는다.</li>
+				<li>소금을 적당량 뿌린다.</li>
+				<li>젓가락으로 찔러서 들어가면 완성!</li>
+			</ol>
+			<p class="lefttext">후기: 냄비가 타서 엄마한테 혼났다.</p>
+			<p class="lefttext p-final">TIP: 감자가 덜 익어서 물을 더 넣더라도 소금은 더 넣으면 안 된다.</p>
+		</div>
+		</section>
+
+		<div class="w-box"></div>
+
+		<section class="bg-orange" id="2">
+		<div class="row">
+			<h2>블루베리 두부 스테이크</h2>
+			<p>2021년 7월</p>
+			<img class="cookingimg" src="cooking2.jpg">
+			<p class="bg-ly">레시피</p>
+			<ol>
+				<li>두부에 칼집을 넣고 기름을 바른다.</li>
+				<li>에어프라이어에서 두부가 노릇하게 익을 때까지 굽는다.</li>
+				<li>블루베리와 와인, 소금 등을 넣고 끓인다.</li>
+				<li>익은 두부스테이크에 스테이크 소스를 얹으면 완성!</li>
+			</ol>
+			<p class="lefttext p-final">후기: 달고 싱거웠다.</p>
+		</div>
+		</section>
+
+		<div class="w-box"></div>
+
+		<section class="bg-green" id="3">
+		<div class="row">
+			<h2>고추기름 볶음밥과 양파 튀김</h2>
+			<p>2021년 8월</p>
+			<img class="cookingimg" src="cooking3.jpg">
+			<p class="bg-ly">레시피</p>
+			<ol>
+				<li>고추기름에 파, 버섯, 양파, 마늘을 넣고 볶는다.</li>
+				<li>야채가 어느정도 익으면 밥을 넣고 같이 볶는다.</li>
+				<li>달걀 푼 물을 같이 볶는다.</li>
+				<li>얇게 썬 양파를 씻어서 한겹한겹 분리해주고 밀가루옷을 얇게 입힌다.</li>
+				<li>양파를 후라이팬에서 튀기듯이 굽는다.</li>
+				<li>곁들여서 완성!</li>
+			</ol>
+			<p class="lefttext">후기: 맛있게 매웠고 양파 튀김이 바삭해서 좋았다.</p>
+			<p class="lefttext p-final">TIP: 볶음밥은 갓 지은 밥이 아니라 식은 밥이나 데운 밥으로 만들어야 뭉치지 않고 잘 볶아진다.</p>
+		</div>
+		</section>
+
+		<div class="w-box"></div>
+
+		<section class="bg-orange" id="4">
+		<div class="row">
+			<h2>토마토 카레와 템페 튀김</h2>
+			<p>2022년 6월</p>
+			<img class="cookingimg" src="cooking4.jpg">
+			<p class="bg-ly">레시피</p>
+			<ol>
+				<li>양파를 먼저 잘 익은 갈색이 될 때까지 익혀준다.</li>
+				<li>깍둑썰기한 토마토와 얇게 썬 양송이를 넣어서 뚜껑을 덮고 익힌다.</li>
+				<li>토마토에서 물이 어느정도 나왔으면 카레가루와 스프 스톡을 넣고 다시 뚜껑을 덮고 익힌다.</li>
+				<li>템페는 길게 썰어 튀기듯이 굽는다.</li>
+				<li>부글부글 끓은 카레와 템페를 예쁘게 접시에 올리면 완성!</li>
+			</ol>
+			<p class="lefttext">후기: 토마토가 적당히 새콤한 맛을 더해줘서 맛있었다.</p>
+			<p class="lefttext p-final">TIP: 토마토에서 물이 많이 나오기 때문에 카레에 물을 넣을 필요가 없다.</p>
+		</div>
+		</section>
+
+		<div class="w-box"></div>
+
+		<section class="bg-green" id="5">
+		<div class="row">
+			<h2>가지 그라탕</h2>
+			<p>2022년 12월</p>
+			<img class="cookingimg" src="cooking5.jpg">
+			<p class="bg-ly">레시피</p>
+			<ol>
+				<li>가지를 얇게 썰어 살짝 노릇하게 굽는다.</li>
+				<li>넣고 싶은 야채들을 잘게 썰어서 기름에 볶는다.</li>
+				<li>익은 야채와 토마토소스를 섞어서 한 번 더 볶는다.</li>
+				<li>야채가 들어간 토마토소스와 익은 가지를 그라탕 용기에 번갈아서 담는다.</li>
+				<li>모짜렐라 치즈를 올리고 전자레인지에서 치즈가 녹을 때까지 돌린다.</li>
+				<li>손에 화상을 입지 않게 조심해서 꺼내면 완성!</li>
+			</ol>
+			<p class="lefttext">후기: 가지를 편식하는 나도 맛있게 먹을 수 있었다.</p>
+			<p class="lefttext p-final">TIP: 가지가 기름을 잘 빨아들여서 기름은 조금만 뿌려도 된다.</p>
+		</div>
+		</section>
+
+		<footer>
+			<div class="row">
+				<div class='flex-center'>
+					<p>얼렁뚱땅 쿡스타그램 보러가기 ->>></p>
+					<a href='https://www.instagram.com/mad.id.dda/' target='_blank'><img src='instagram.png' class='icon-s'></a>
+					<p>@mad.id.dda</p>
+				</div>
+				<p>구현정이 만든 실습용 웹페이지입니다. 2024&copy;구현정</p>
+			</div>
+		</footer>
+
+		<div class='fixed-totop-back'>
+			<img src='totop.png' width=100px>
+		</div>
+		<div class='fixed-totop-text'>
+			<a href="#0">처음으로</a>
+		</div>
+	</body>
+</html>
